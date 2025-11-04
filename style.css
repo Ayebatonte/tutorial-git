@@ -1,0 +1,145 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+/* global stlyes */
+:root {
+  --primaryColor: red;
+  --primeFam: verdana;
+}
+h1,
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  font-family: var(--primeFam);
+  /* margin-top: 2rem; */
+}
+body {
+  background-color: rgb(194, 214, 207);
+}
+.pic img {
+  width: 100%;
+  margin-top: 25px;
+}
+.player img {
+  width: 100%;
+  display: block;
+  height: 17rem;
+  object-fit: cover;
+}
+
+.section-center {
+  padding: 4rem 0;
+  margin: 0 auto;
+  max-width: 1120px;
+  background: rgba(60, 255, 60, 0.181);
+  width: 85vw;
+  /* max-height: 100vh; */
+}
+
+.section-center article {
+  padding: 2rem 1.5rem;
+}
+
+.text {
+  max-width: 20rem;
+  padding: 1.25rem 0;
+}
+
+@media screen and (min-width: 700px) {
+  .section-center {
+    max-height: 100vh;
+  }
+  .player {
+    float: left;
+    width: 45%;
+    padding-right: 1rem;
+  }
+}
+@media screen and (min-width: 900px) {
+  .player {
+    /* float: left; */
+    width: 33.333%;
+  }
+}
+@media screen and (min-width: 1000px) {
+  .write {
+    float: left;
+    width: 30%;
+    /* background: green; */
+  }
+  .players {
+    float: left;
+    width: 70%;
+    /* background: blue; */
+  }
+  .player {
+    text-align: center;
+    padding-top: 5rem;
+  }
+}
+.clearfix::before,
+.clearfix::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+h2 {
+  margin-bottom: 1.25rem;
+}
+
+.divider {
+  background: linear-gradient(to left, green, blue);
+  height: 0.5rem;
+}
+.box {
+  padding: 2rem;
+  background: gray;
+  border-bottom: 5px solid #f5deb3;
+  transition: all 2s;
+}
+.small-pic {
+  width: 7.5rem;
+  margin: 0 auto;
+}
+.small {
+  width: 100%;
+  display: block;
+  border-radius: 20px;
+  transition: all 2s;
+}
+.name {
+  font-size: 0.75rem;
+  /* margin-top: 10px; */
+}
+.box-text {
+  max-width: 17rem;
+  /* background: red; */
+  margin: 10px auto 0 auto;
+  text-align: center;
+}
+
+@media screen and (min-width: 776px) {
+  .box {
+    float: left;
+    width: 50%;
+  }
+}
+@media screen and (min-width: 998px) {
+  .box {
+    width: 25%;
+  }
+}
+
+.box:hover {
+  background: white;
+  border-bottom: solid black;
+}
+
+.box:hover .small {
+  transform: translateY(-10px);
+  transform: scale(0.5);
+}
