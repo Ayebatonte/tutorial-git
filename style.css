@@ -12,7 +12,7 @@ h1,
 h2,
 h3,
 h4 {
-  text-transform: uppercase;
+  text-transform: lowercase;
   font-family: var(--primeFam);
   /* margin-top: 2rem; */
 }
@@ -34,7 +34,7 @@ body {
   padding: 4rem 0;
   margin: 0 auto;
   max-width: 1120px;
-  background: rgba(60, 255, 60, 0.181);
+  background: rgba(200, 202, 34, 0.181);
   width: 85vw;
   /* max-height: 100vh; */
 }
